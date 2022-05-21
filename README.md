@@ -1,0 +1,2 @@
+# -inputpass
+func entercsifun() ; click okay to move to next attempt     While WinExists($title) = 1 or WinExists($title2) =  1         If WinExists($title2) =  1 then             If Not WinActive($title2) Then WinActivate($title2)                 Sleep($delay)             ControlSend($title2, "", "", "{enter}")         EndIf         Sleep($delay)         inputpass()         Sleep($timebeforenextlogin)
